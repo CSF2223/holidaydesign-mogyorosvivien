@@ -1,9 +1,9 @@
 /*
 Color Palette
-background color: #61764B
-primary: #FAD6A5
-secondary: #CFB997
-tertiary: #9BA17B
+background color: #850000
+primary: #FFDB89
+secondary: #DC0000
+tertiary: #FFF6C3
 accent: #FAD6A5
 vegasGold: #c5b358
 white: #fff
@@ -18,10 +18,10 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Teko', sans-serif;;
     font-weight: 300;
-    background-color: #557153;
-    color: #FAD6A5;
+    background-color: #850000;
+    color: #FFDB89;
 } 
 
 .hero {
@@ -37,7 +37,7 @@ body {
 
 .heroImage img {
     border-radius: 10rem;
-    box-shadow: 10px 10px #9BA17B;
+    box-shadow: 10px 10px #DC0000;
     width: 125%;
     height: 100%;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .heroName {
-    color: #FAD6A5;
+    color: #FFDB89;
     font-size: 2.5rem;
     text-transform: uppercase;
 }
@@ -96,8 +96,8 @@ body {
 }
 
 .projectCard{
-    background-color: #61764B;
-    color: #FAD6A5;
+    background-color: #DC0000;
+    color: #FFDB89;
     margin: 4rem 3rem;
     padding: 0.5rem 2rem;
     text-align: center;
@@ -122,12 +122,12 @@ body {
 }
 
 .projectCard p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .projectCard:hover {
-    background-color: #FAD6A5;
+    background-color: #850000;
     color: #61764B;
     transform: scale(1.1);
     transition:1s;
