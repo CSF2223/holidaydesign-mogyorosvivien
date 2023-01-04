@@ -1,0 +1,220 @@
+/*
+Color Palette
+background color: #62B6B7
+primary: #CBEDD5
+secondary: #439A97
+tertiary: #FFF6C3
+accent: #FAD6A5
+vegasGold: #c5b358
+white: #fff
+black: #000  
+*/
+
+html { 
+    /* If we add any padding or border onto an element it does not affect he width of the element */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Teko', sans-serif;;
+    font-weight: 300;
+    background-color: #439A97;
+    color: #CBEDD5;
+} 
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heroImage {
+    padding: 4rem;
+}
+
+.heroImage img {
+    border-radius: 10rem;
+    box-shadow: 10px 10px #DC0000;
+    width: 125%;
+    height: 100%;
+}
+
+
+.heroText {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.heroName {
+    color: #CBEDD5;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.heroTextTop {
+    padding: 2rem;
+    
+}
+
+.heroTextBottom{
+    padding: 1rem;
+}
+
+.heroButton {
+    margin: 2rem;
+}
+
+.button {
+    background-color: #61764B;
+    padding: 1rem;
+    border: 1px solid #FAD6A5;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #FAD6A5;
+    text-decoration: none;
+    box-shadow: 8px 8px 4px #9BA17B;
+}
+
+.button:hover {
+    background-color: #97DECE;
+    color: #DC0000;
+    transform: scale(3);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.projectsHeader{
+    margin: .5rem .5rem;
+    text-align: center;
+    padding: 1.5rem;
+    letter-spacing: 10px;
+}
+
+.projectCard{
+    background-color: #62B6B7;
+    color: #CBEDD5;
+    margin: 4rem 3rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border: 2px solid #678983;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 5px #678983;
+}
+
+
+
+.projectCard img {
+    width: 50%;
+    height: auto;
+    border-radius: 3rem;
+    margin: 1rem 0;
+    filter: opacity(80%);
+}
+
+.projectCard h2{
+    margin: 0.5rem 1rem 1.5rem 1rem;
+    font-weight: 400;
+}
+
+.projectCard p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.projectCard:hover {
+    background-color: #97DECE;
+    color: #439A97;
+    transform: scale(1.1);
+    transition:1s;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.projectIcons {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.projectIcons p {
+    margin: 0 0 1rem 0;
+    font-size: 0.8rem;
+}
+
+.fa-github {
+    font-size: 2.2rem;
+    padding: 1.5rem;
+}
+
+.fa-file {
+    font-size: 2.2rem;
+    padding: 1.5rem;
+}
+
+footer {
+    text-align:center;
+    color: #CBEDD5;
+    margin: 10rem 0;
+    border-top: 1px solid #9277AC;
+}
+
+.copyright {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #CBEDD5;
+    display: block;
+}
+
+.filler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem;
+    height: 80vh;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 800px) {
+    .hero {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    }    
+    
+    .heroText{
+        font-size: 1rem;
+    }
+    
+    .heroName{
+        font-size: 3.5rem;
+    }
+    
+    .button {
+        font-size: 1.1rem;
+    }
+    
+    .projectGallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .projectCard {
+        max-width: 20%;
+    }
+}
